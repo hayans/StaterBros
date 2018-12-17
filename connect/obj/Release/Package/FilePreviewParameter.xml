@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="CM" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\dev\\staterbros\\connect\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\dev\\staterbros\\connect\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="db_connection-Web.config Connection String" description="" value="Data Source=DEV-APP-SQL16;Initial Catalog=HangFire;User ID=HANGFIRE_SVC_DEV;Password=V3dFh8lO2" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\dev\\staterbros\\connect\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='db_connection']/@connectionString" />
+  </parameter>
+</parameters>

@@ -3,3 +3,5 @@
 ################################################################################
 
 /connect/Web.config
+/connect/Web.Debug.config
+/connect/Web.Release.config

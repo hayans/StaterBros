@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="db_connection-Web.config Connection String" description="db_connection Connection String used in web.config by the application to access the database." defaultValue="Data Source=DEV-APP-SQL16;Initial Catalog=HangFire;User ID=HANGFIRE_SVC_DEV;Password=V3dFh8lO2" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\dev\\staterbros\\connect\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='db_connection']/@connectionString" />
+  </parameter>
+</parameters>
