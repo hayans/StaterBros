@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace connect.Service.documentum.filter
+namespace connect.Service.ibm.cm.filter
 {
     public class HangFireCustomAutoRetryJobFilterAttribute : JobFilterAttribute, IElectStateFilter
     {

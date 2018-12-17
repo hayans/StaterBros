@@ -23,6 +23,8 @@
     <IISExpressUseClassicPipelineMode />
     <NuGetPackageImportStamp>166922fe</NuGetPackageImportStamp>
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -215,8 +217,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\documentum\ContentProperty.cs" />
-    <Compile Include="Models\documentum\ContentPropertyResponse.cs" />
     <Compile Include="Models\docusign\connect\ConnectProcessResponse.cs" />
     <Compile Include="Models\docusign\connect\DocuSignEnvelopeInformation.cs" />
     <Compile Include="Models\docusign\connect\JobDocument.cs" />
@@ -233,19 +233,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Service\documentum\api\DocumentumApi.cs" />
-    <Compile Include="Service\documentum\api\IDocumentumApi.cs" />
-    <Compile Include="Service\documentum\DocumentumService.cs" />
-    <Compile Include="Service\documentum\filter\HangFireCustomAutoRetryJobFilterAttribute.cs" />
-    <Compile Include="Service\documentum\utils\DocmentumServiceUtils.cs" />
     <Compile Include="Service\docusign\DocuSignCredentials.cs" />
     <Compile Include="Service\docusign\DocuSignService.cs" />
     <Compile Include="Service\docusign\utils\DocumentRetrieveOptions.cs" />
-    <Compile Include="Service\documentum\utils\EnvelopeMetaFields.cs" />
     <Compile Include="Service\docusign\utils\DocuSignEnvironment.cs" />
     <Compile Include="Service\docusign\utils\ServiceUtil.cs" />
     <Compile Include="Service\hangfire\tasks\ContentManagerUploadTask.cs" />
     <Compile Include="Service\ibm\cm\CMWebServiceClient.cs" />
+    <Compile Include="Service\ibm\cm\filter\HangFireCustomAutoRetryJobFilterAttribute.cs" />
     <Compile Include="Service\ibm\cm\utils\CMServiceUtils.cs" />
     <Compile Include="Service\ibm\cm\utils\EnvelopeMetaFields.cs" />
     <Compile Include="Service\ibm\cm\utils\XmlUtil.cs" />

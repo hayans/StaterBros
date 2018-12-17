@@ -5,3 +5,4 @@
 /connect/Web.config
 /connect/Web.Debug.config
 /connect/Web.Release.config
+/.vs/connect/v15/Server/sqlite3/db.lock
